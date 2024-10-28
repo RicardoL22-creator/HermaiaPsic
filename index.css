@@ -119,6 +119,22 @@ body {
     align-items: center;
     justify-content: flex-start; 
     padding-left: 20px; 
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+
+}
+.curiosidade3{
+    height: 500px;
+    margin-top: 5px;
+    display: flex;
+    background-color: #97cbbe;
+    height: 210px;
+    align-items: center;
+    justify-content: flex-start; 
+    padding-left: 20px; 
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+
+
+    
 }
 
 .curiosidade1.show {
@@ -139,6 +155,7 @@ body {
     border-radius: 50%; 
     object-fit: cover; 
 }
+
 
 .texto {
     font-size: 24px;
