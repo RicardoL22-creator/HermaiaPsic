@@ -1,0 +1,157 @@
+body {
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.cabecalho {
+    background: linear-gradient(to right, #0b6375, #0768336f);
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+    display: block;   
+}
+
+.menu, a {
+    font-size: 20px;
+    padding-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.menu:hover {
+    color: black;
+    text-decoration: solid;
+    margin-top: 15px;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 98%;
+    height: 750px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 30px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+.slides {
+    width: 300%; /* Ajuste se você tiver mais imagens */
+    height: 100%; 
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out; /* Adiciona transição suave */
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 100%; 
+    position: relative;
+}
+
+.slider img {
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto;
+}
+
+.manual-navegation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 3px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: black;
+}
+
+.curiosidade1 {
+    background-color: #97CBBE;
+    width: 100%;
+    height: 210px;
+    margin-top: 15px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    opacity: 0; 
+    transform: translateX(50px); 
+    transition: transform 1.5s ease-out, opacity 5s ease-out; 
+
+}
+.curiosidades1 {
+    height: 500px;
+    margin-top: 7px;
+    display: flex;
+}
+.curiosidades2 {
+    height: 500px;
+    margin-top: -290px;
+    display: flex;
+    background-color: #97cbbe;
+    height: 210px;
+    align-items: center;
+    
+}
+
+.curiosidade1.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+.imagemredonda {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+.imagemredonda2 {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-left: 89%;
+}
+
+.texto {
+    font-size: 24px;
+    margin-left: 15px;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.texto2 {
+    font-size: 24px;
+    margin-left: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left; /* Garante o alinhamento do texto à esquerda */
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo dentro do flex container à esquerda */
+}
+
