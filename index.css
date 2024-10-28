@@ -26,10 +26,9 @@ body {
     text-align: left;
 }
 
-.menu:hover {
+.menu a:hover {
     color: black;
     text-decoration: solid;
-    margin-top: 15px;
 }
 
 .slider {
@@ -43,13 +42,13 @@ body {
 }
 
 .slides {
-    width: 300%; /* Ajuste se você tiver mais imagens */
+    width: 300%; 
     height: 100%; 
     display: flex;
     position: absolute;
     left: 0;
     top: 0;
-    transition: all 0.5s ease-in-out; /* Adiciona transição suave */
+    transition: all 0.5s ease-in-out; 
 }
 
 .slides input {
@@ -104,11 +103,13 @@ body {
     transition: transform 1.5s ease-out, opacity 5s ease-out; 
 
 }
+
 .curiosidades1 {
     height: 500px;
     margin-top: 7px;
     display: flex;
 }
+
 .curiosidades2 {
     height: 500px;
     margin-top: -290px;
@@ -116,15 +117,14 @@ body {
     background-color: #97cbbe;
     height: 210px;
     align-items: center;
-    
+    justify-content: flex-start; 
+    padding-left: 20px; 
 }
 
-.curiosidade1.show{
+.curiosidade1.show {
     opacity: 1;
     transform: translateX(0);
 }
-
-
 
 .imagemredonda {
     width: 200px; 
@@ -132,12 +132,12 @@ body {
     border-radius: 50%; 
     object-fit: cover; 
 }
+
 .imagemredonda2 {
     width: 200px; 
     height: 200px; 
     border-radius: 50%; 
     object-fit: cover; 
-    margin-left: 89%;
 }
 
 .texto {
@@ -146,12 +146,12 @@ body {
     display: flex;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .texto2 {
     font-size: 24px;
     margin-left: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: left; /* Garante o alinhamento do texto à esquerda */
+    text-align: left;
     display: flex;
-    justify-content: flex-start; /* Alinha o conteúdo dentro do flex container à esquerda */
+    justify-content: flex-start;
 }
-
