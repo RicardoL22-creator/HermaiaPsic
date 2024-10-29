@@ -3,23 +3,20 @@ const slides = document.querySelectorAll('.slides > .slide');
 const totalSlides = slides.length;
 const radioButtons = document.querySelectorAll('input[name="radio-btn"]');
 
-// Função para mostrar o slide atual
 function showSlide() {
-    const marginLeft = -index * 100; // Calcula a margem com base no índice
+    const marginLeft = -index * 100; 
     document.querySelector('.slides').style.marginLeft = `${marginLeft}%`;
 }
 
-// Configura a transição automática de slides
 setInterval(() => {
-    index = (index + 1) % totalSlides; // Avança para o próximo slide
+    index = (index + 1) % totalSlides; 
     showSlide();
-}, 5000); // Troca a imagem a cada 5 segundos
+}, 5000); 
 
-// Adiciona event listeners para os botões manuais
 radioButtons.forEach((radioButton, idx) => {
     radioButton.addEventListener('change', () => {
-        index = idx; // Atualiza o índice com base no botão selecionado
-        showSlide(); // Mostra o slide correspondente
+        index = idx; 
+        showSlide(); 
     });
 });
 
@@ -29,11 +26,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('show'); // Adiciona a classe que ativa a animação
-                observer.unobserve(entry.target); // Para de observar após ativar
+                entry.target.classList.add('show'); 
+                observer.unobserve(entry.target); 
             }
         });
-    }, { threshold: 0.1 }); // Ativa quando 10% da div estiver visível
+    }, { threshold: 0.1 }); 
 
     observer.observe(target);
 });
