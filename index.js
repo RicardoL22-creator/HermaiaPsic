@@ -35,3 +35,17 @@ document.addEventListener("DOMContentLoaded", function() {
     observer.observe(target);
 });
 
+const inputTelefone = document.getElementById('tel');
+
+inputTelefone.addEventListener('input',(event) =>{
+    let telefone = event.target.value;
+
+    telefone = telefone.replace(/\D/g, '');
+    
+    telefone = telefone.replace(/^(\d{2})(\d)/g, '($1) $2');
+    telefone = telefone.replace(/(\d{5})(\d)/, '$1-$2');
+
+    event.target.value = telefone;
+
+
+});

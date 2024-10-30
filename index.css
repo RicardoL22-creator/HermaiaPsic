@@ -231,3 +231,55 @@ body {
     margin-top: 70px;
     box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.2);
 }
+.form-container {
+    background: linear-gradient(to top, #FFFFFF, #0768336f);
+    padding: 150px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: -45px;
+
+}
+.form-group input {
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: -45px;
+}
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0b6375;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.submit-btn:hover {
+    background-color: #45a049;
+}
+.title-form{
+    color: #0b6375;
+    font-size: 30px; 
+    text-align: center; 
+    margin-bottom: 50px; 
+    display: block; 
+    white-space: nowrap;
+}
+.rodape{
+    width: 100%;
+    height: 250px;
+    background-color: #666666;
+}
