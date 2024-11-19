@@ -49,3 +49,16 @@ inputTelefone.addEventListener('input',(event) =>{
 
 
 });
+
+function initMap() {
+    const location = { lat: -23.5505, lng: -46.6333 }; 
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: location,
+    });
+    const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+    });
+}
+
