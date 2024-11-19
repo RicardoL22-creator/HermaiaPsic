@@ -9,10 +9,10 @@ body {
 
 .cabecalho {
     background: linear-gradient(to right, #0b6375, #0768336f);
-    padding: 15px;
-
+    padding-bottom: 10px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
     display: block;   
+    align-items: center;
 }
 
 .menu, a {
@@ -23,6 +23,7 @@ body {
     text-decoration: none;
     padding: 0 20px;
     text-align: left;
+    margin-top: 15px;
 }
 
 .menu a:hover {
@@ -30,9 +31,38 @@ body {
     text-decoration: solid;
 }
 .login-btn{
-    background-color: #ffffff;
-    margin-left: 95%;
-    border-radius: 60px;
+    background: linear-gradient(to top, #FFFFFF, #0768336f);
+    margin-left: 92%;
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    color: #0b6375;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+
+
+    
+    
+    
+}
+.login-btn:hover{
+    background-color: #0b6375;
+    color: #000000;
+    
+}
+
+.container-btn-login{
+    margin-top: -30px;
+    display: flex;
+
+    
+
+}
+#cadastro{
+    margin-left: -210px;
+    color: #0b6375;
+
 }
 
 .slider {
