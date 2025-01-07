@@ -359,9 +359,10 @@ iframe {
 
 .rodape div{
     width: 100%;
-    height: 200px;
+    height: 100px;
     margin-top: 20px;
     background-color: #666666;
+    gap: 15px;
 }
 .textoRodape label{
     color: #ffffff;
